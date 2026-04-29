@@ -9,7 +9,7 @@ console.log("hello");
 // This is a single line comment
 
 //Main code
-
+var()
 
 
 

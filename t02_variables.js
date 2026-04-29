@@ -15,4 +15,6 @@ console.log(username);
 console.log(userage);
 console.log(money);
 console.log(years)
-console.log("Hi,my nane is " + username);
+console.log("Hi, my nane is " + username);
+console.log("I am "+ userage + " years old");
+console.log("I have "+ money+" dollars in my pocket")

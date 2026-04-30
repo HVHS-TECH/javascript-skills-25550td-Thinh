@@ -18,10 +18,9 @@ console.log(username);
 console.log(userage);
 console.log(money);
 console.log(years)
-console.log(birth)
 console.log("Hi, my nane is " + username);
 console.log("I am "+ userage + " years old");
 console.log("I was born in " +  (years-userage));
 console.log("In next 10 years, I will be " + (userage + next10years));
 console.log("I have "+ money + " dollars")
-console.log("I spend half of my money, now I have "+())
+console.log("I spend half of my money, now I have ")

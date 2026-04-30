@@ -13,7 +13,7 @@ let years =2026;
 let birth =2010;
 let next10years= 10;
 let answer;
-let add= (userage + next10years);
+
 //Main code
 console.log(username);
 console.log(userage);
@@ -23,4 +23,4 @@ console.log(birth)
 console.log("Hi, my nane is " + username);
 console.log("I am "+ userage + " years old");
 console.log("I was born in " +  birth);
-console.log("In next 10 years, I will be " + add);
+console.log("In next 10 years, I will be " + (userage + next10years));

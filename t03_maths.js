@@ -12,7 +12,8 @@ let money =100;
 let years =2026;
 let next10years= 10;
 let answer;
-
+let half= 2;
+let extra= 3;
 //Main code
 console.log(username);
 console.log(userage);
@@ -23,4 +24,5 @@ console.log("I am "+ userage + " years old");
 console.log("I was born in " +  (years-userage));
 console.log("In next 10 years, I will be " + (userage + next10years));
 console.log("I have "+ money + " dollars")
-console.log("I spend half of my money, now I have ")
+console.log("I spend half of my money, now I have " + (money / half));
+console.log("Then I get 3 dollars, now I have " + (money / half + extra))

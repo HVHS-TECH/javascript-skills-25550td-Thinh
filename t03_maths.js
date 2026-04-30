@@ -11,7 +11,7 @@ let userage =15;
 let money =100;
 let years =2026;
 let birth =2010;
-let = 10;
+let next10years= 10;
 //Main code
 console.log(username);
 console.log(userage);

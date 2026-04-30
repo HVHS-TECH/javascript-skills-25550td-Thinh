@@ -25,3 +25,4 @@ console.log("I am "+ userage + " years old");
 console.log("I was born in " +  birth);
 console.log("In next 10 years, I will be " + (userage + next10years));
 console.log("I have "+ money + " dollars")
+console.log("I spend half of my money, now I have "+())

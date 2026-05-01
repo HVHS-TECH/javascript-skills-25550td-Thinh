@@ -1,10 +1,10 @@
 console.log("Running t04_debugging.js")
 
 // calculate the area
-let area = length + width;
+let area = (length + width);
 
 // calculate the perimeter
-let perimeter = 2  length + 2 * width; 
+let perimeter = (2  length + 2 * width); 
 
 // Set up the size of the page.
 let length = 8;

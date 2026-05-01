@@ -1,4 +1,4 @@
-console.log("Running t04_debugging.js");
+console.log("Running t04_debugging.js")
 
 // calculate the area
 var area = length + width;
@@ -18,5 +18,4 @@ console.log("The same piece of paper has a perimeter of "+perimeter)
 if (perimeter > area){
     console.log("Yay, your area is larger, this is right for this example")
 }else{
-    console.log("Hmm, your perimeter is larger. It shouldn't be for this example)
-}
+    console.log("Hmm, your perimeter is larger. It shouldn't be for this example");

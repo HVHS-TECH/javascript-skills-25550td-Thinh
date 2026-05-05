@@ -27,4 +27,4 @@ console.log("I have "+ money + " dollars")
 console.log("I spend half of my money, now I have " + (money / half));
 console.log("Then I get 3 dollars, now I have " + (money / half + extra))
 const Output = document.getElementById("spaceForJavaScriptOutput");
-Output.innerHTML += "<h2>Hi, my nane is " + username + "</h2>";
+Output.innerHTML += "<h2>Hi, my nane is " + username +"</h2>";

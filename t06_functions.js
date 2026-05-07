@@ -30,3 +30,10 @@ Output.innerHTML += "<p>In next 10 years, I will be " + (userage + next10years) 
 Output.innerHTML += "<p>I have "+ money + " dollars</p>";
 Output.innerHTML += "<p>I spend half of my money, now I have " + (money / half) + "</p>";
 Output.innerHTML += "<p>Then I get 3 dollars, now I have " + (money / half + extra) + "</p>"; 
+/*****************************
+ Functions
+*****************************/
+
+function introduce() {
+    console.log("This is the introduce function");
+}

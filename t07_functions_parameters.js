@@ -45,6 +45,6 @@ function displayProduct(productName, price) {
 *****************************/
 introduce();
 welcome();
-displayProduct("chocolate bar", 4);
-displayProduct("chips", 3);
-displayProduct
+displayProduct("Chocolate bar", 4);
+displayProduct("Chips", 3);
+displayProduct("Drink", 2.5)

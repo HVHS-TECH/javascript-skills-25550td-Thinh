@@ -38,7 +38,7 @@ function welcome() {
     Output.innerHTML += "<p>Welcome to the shop</p>";
 }
 function displayProduct(productName, price) {
-    Output.innerHTML +=  productName  + price;
+    Output.innerHTML +=  productName  +"$"+  price ;
 }
 /*****************************
  Main code

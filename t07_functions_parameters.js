@@ -35,7 +35,7 @@ function introduce() {
     Output.innerHTML += "<h1> This is the function task</h1>";
 }
 function welcome() {
-    Output.innerHTML += "<p>Welcome to the shop</p>";
+    Output.innerHTML += "<h2>Welcome to the shop</h2>";
 }
 function displayProduct(productName, price) {
     Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";

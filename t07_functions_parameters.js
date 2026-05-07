@@ -38,7 +38,7 @@ function welcome() {
     Output.innerHTML += "<p>Welcome to the shop</p>";
 }
 function displayProduct(productName, price) {
-    Output.innerHTML +=  productName  +"$"+  price ;
+    Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
 }
 /*****************************
  Main code
@@ -47,3 +47,4 @@ introduce();
 welcome();
 displayProduct("chocolate bar", 4);
 displayProduct("chips", 3);
+displayProduct

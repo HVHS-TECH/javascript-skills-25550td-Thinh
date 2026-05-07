@@ -38,10 +38,11 @@ function welcome() {
     Output.innerHTML += "<p>Welcome to the shop</p>";
 }
 function displayProduct(productName, price) {
-    Output.inner
+    Output.innerHTML += "<p>Product: " + productName + ", Price: $" + price + "</p>";
+}
 /*****************************
  Main code
 *****************************/
 introduce();
 welcome();
-
+displayProduct()

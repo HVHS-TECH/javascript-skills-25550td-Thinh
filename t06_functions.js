@@ -35,5 +35,9 @@ Output.innerHTML += "<p>Then I get 3 dollars, now I have " + (money / half + ext
 *****************************/
 
 function introduce() {
-    console.log("This is the introduce function");
+    Output.innerHTML += "<h3> This is the function task</h3>";
 }
+/*****************************
+ Main code
+*****************************/
+introduce();

@@ -1,5 +1,4 @@
-/* Paste your code from task 3, Maths here */
-/* Paste your code from task 1 here *//****************************
+/* Paste your code from task 3 here *//****************************
 This is a block comment.
 Put your header comment here!
 ****************************/

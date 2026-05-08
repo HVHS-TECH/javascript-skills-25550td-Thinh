@@ -40,6 +40,15 @@ function welcome() {
 function displayProduct(productName, price) {
     Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
 }
+function Start() {
+    spaceForJavaScriptOutput.innerHTML
+    spaceForJavaScriptOutput.innerHTML
+    answer= years - userage;
+    spaceForJavaScriptOutput.innerHTML
+    
+
+
+
 /*****************************
  Main code
 *****************************/
@@ -47,5 +56,5 @@ introduce();
 welcome();
 displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
-displayProduct("Drink", 2.5)
+displayProduct("Drink", 2.5);
 

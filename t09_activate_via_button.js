@@ -1,5 +1,5 @@
 /* Paste your code from task 7 here */
-console.log("Running t07_functions_parameters.js")
+console.log("Running t09_activate_via_button.js")
 
 // variable
 let username = "Thinh";

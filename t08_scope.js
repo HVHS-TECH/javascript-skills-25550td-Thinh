@@ -1,3 +1,4 @@
+console.log("Running t08_scope.js")
 const output = document.getElementById("output");
 
 

@@ -45,7 +45,8 @@ function Start() {
     spaceForJavaScriptOutput.innerHTML
     answer= years - userage;
     spaceForJavaScriptOutput.innerHTML
-    
+}
+
 
 
 

@@ -42,8 +42,9 @@ function displayProduct(productName, price) {
 }
 function Start() {
     answer= years - userage;
-    spaceForJavaScriptOutput.innerHTML += "<h1> This is the function task</h1>";
-    Output.innerHTML += "<p> I was born in " + answer + "</p>";
+    spaceForJavaScriptOutput.innerHTML += "<h1> This is the button task</h1>";
+    Output.innerHTML += "<p> My name is " + username + "</p>";
+    Output.innerHTML += "<p> Scrolll down to see more</p>";
 }
 
 

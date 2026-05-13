@@ -41,10 +41,9 @@ function displayProduct(productName, price) {
     Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
 }
 function Start() {
-    spaceForJavaScriptOutput.innerHTML
-    spaceForJavaScriptOutput.innerHTML
     answer= years - userage;
-    spaceForJavaScriptOutput.innerHTML
+    spaceForJavaScriptOutput.innerHTML += "<h1> This is the function task</h1>";
+    Output.innerHTML += "<p> I was born in " + answer + "</p>";
 }
 
 
@@ -58,4 +57,5 @@ welcome();
 displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
+Start();
 

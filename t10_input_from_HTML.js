@@ -47,12 +47,17 @@ function Start() {
     Output.innerHTML += "<p> Scrolll down to see more</p>";
 }
 
-function getFormInput() {
+function checkName() {
 
-  let name = document.getElementById("nameField").value;
+  const name = document.getElementById("nameField").value;
 
-  document.getElementById("output").innerHTML =
-    "Welcome " + name;
+  if (name === "Thinh") {
+    document.getElementById("output").innerHTML =
+      "Welcome Thinh";
+  } else {
+    document.getElementById("output").innerHTML =
+      "Incorrect";
+  }
 
 }
 
@@ -68,5 +73,5 @@ displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
 Start();
-getFormInput();
+checkName();
 

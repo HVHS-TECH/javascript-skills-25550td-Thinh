@@ -48,6 +48,10 @@ function Start() {
 }
 const NAME_FIELD = document.getElementById("nameFiedld");
 let username = NAME_FIELD.value;
+function getFormInput() {
+    username = NAME_FIELD.value;
+    Output.innerHTML += "<p> Hello " + username + " Welcome to the page!</p>";
+}
 
 
 

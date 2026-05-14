@@ -58,6 +58,8 @@ function checkName() {
     document.getElementById("output").innerHTML ="Incorrect";
   }
 
+}
+
 
 
 

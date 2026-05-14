@@ -46,6 +46,8 @@ function Start() {
     Output.innerHTML += "<p> My name is " + username + "</p>";
     Output.innerHTML += "<p> Scrolll down to see more</p>";
 }
+const NAME_FIELD = document.getElementById("nameFiedld");
+let username = NAME_FIELD.value;
 
 
 

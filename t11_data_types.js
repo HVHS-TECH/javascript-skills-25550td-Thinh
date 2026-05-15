@@ -47,6 +47,20 @@ function Start() {
     Output.innerHTML += "<p> Scrolll down to see more</p>";
 }
 
+function checkName() {
+
+  const name = document.getElementById("nameField").value;
+
+  if (name === "Thinh") {
+    document.getElementById("output").innerHTML = "Welcome to the page, Thinh!";
+  }
+    else {
+    document.getElementById("output").innerHTML = "Type a correct name";
+    }
+}
+
+
+
 
 
 
@@ -55,8 +69,10 @@ function Start() {
 *****************************/
 introduce();
 welcome();
+checkName();
 displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
 Start();
+
 

@@ -54,10 +54,6 @@ function checkName() {
   if (name === "Thinh") {
     document.getElementById("output").innerHTML = "Welcome Thinh";
   }
-   else {
-    document.getElementById("output").innerHTML ="Incorrect";
-  }
-
 }
 
 

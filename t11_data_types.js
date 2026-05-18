@@ -43,16 +43,14 @@ function displayProduct(productName, price) {
 function Start() {
     answer= years - userage;
     spaceForJavaScriptOutput.innerHTML += "<h1> This is the button task</h1>";
-    Output.innerHTML += "<p> My name is " + username + "</p>";
-    Output.innerHTML += "<p> Scrolll down to see more</p>";
+    Output.innerHTML += "<h2> My name is " + username + "</h2>";
 }
-
 function checkName() {
 
   const name = document.getElementById("nameField").value;
 
   if (name === "Thinh") {
-    document.getElementById("output").innerHTML = "Welcome to the page, Thinh!";
+    document.getElementById("output").innerHTML = "Welcome to the page, Thinh!!!";
   }
     else {
     document.getElementById("output").innerHTML = "Type a correct name";

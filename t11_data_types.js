@@ -56,8 +56,9 @@ function checkName() {
     document.getElementById("output").innerHTML = "Type a correct name";
     }
 }
-   if(name === "money")
+   if(name === "money"){
     document.getElementById("output").innerHTML = "You have " + money + " dollars";
+   }
 
 
 

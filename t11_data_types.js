@@ -71,7 +71,7 @@ if (pocketMoney <= 19&& pocketMoney >= 2) {
     document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are rich!";
     }
     if (pocketMoney >= 1000) {
-        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!";
+        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!💵💵💵";
     }
     if (pocketMoney <=1) {
         document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are broke!";

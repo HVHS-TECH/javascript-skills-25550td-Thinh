@@ -63,7 +63,7 @@ function checkPocketMoney() {
   if (pocketMoney >= 20) {
     document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!";
   }
-if (pocketMoney <= 19) {
+if (pocketMoney <= 19&& pocketMoney >= 2) {
     document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!";
     }
 
@@ -73,8 +73,11 @@ if (pocketMoney <= 19) {
     if (pocketMoney >= 1000) {
         document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!";
     }
-    if (pocketMoney <= 0&& 0. < 1) {
+    if (pocketMoney <=1) {
         document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are broke!";
+    }
+    if (pocketMoney <= 0 && pocketMoney <= -1) {
+        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!";
     }
 }
 

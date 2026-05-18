@@ -60,11 +60,11 @@ function checkPocketMoney() {
 
   const pocketMoney = document.getElementById("pocketMoneyField").value;
 
-  if (pocketMoney >= 50) {
-    document.getElementById("output").innerHTML = "You have enough pocket money to buy something!";
+  if (pocketMoney >= 1) {
+    document.getElementById("output").innerHTML = "You have ";
   }
     else {
-    document.getElementById("output").innerHTML = "You might want to save up more pocket money.";
+    document.getElementById("output").innerHTML = "Type a number, ok?";
     }
 }
 

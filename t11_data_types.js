@@ -49,17 +49,13 @@ function checkName() {
 
   const name = document.getElementById("nameField").value;
 
-  if (name === "Thinh") {
+  if (name === "Thinh" || name === "thinh") {
     document.getElementById("output").innerHTML = "Welcome to the page, Thinh!!!";
   }
     else {
     document.getElementById("output").innerHTML = "Type a correct name";
     }
 }
-   if(name === "money"){
-    document.getElementById("output").innerHTML = "You have " + money + " dollars";
-   }
-
 
 
 

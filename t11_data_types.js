@@ -56,6 +56,7 @@ function checkName() {
     document.getElementById("output").innerHTML = "Type a correct name";
     }
 }
+//Line 1//
 function checkPocketMoney() {
 
   const pocketMoney = document.getElementById("pocketMoneyField").value;

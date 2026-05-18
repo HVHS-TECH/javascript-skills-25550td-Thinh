@@ -61,10 +61,10 @@ function checkPocketMoney() {
   const pocketMoney = document.getElementById("pocketMoneyField").value;
 
   if (pocketMoney >= 20) {
-    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!";
+    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!💸";
   }
 if (pocketMoney <= 19&& pocketMoney >= 2) {
-    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!";
+    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!😕";
     }
 
  if (pocketMoney >= 100) {

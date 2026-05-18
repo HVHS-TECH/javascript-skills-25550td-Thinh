@@ -60,13 +60,18 @@ function checkPocketMoney() {
 
   const pocketMoney = document.getElementById("pocketMoneyField").value;
 
-  if (pocketMoney >= 1) {
+  if (pocketMoney >= 50) {
     document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!";
   }
-    else {
-    document.getElementById("output").innerHTML = "Type a number, ok?";
-    }
 }
+if (pocketMoney <= 49) {
+    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!";
+    }
+
+ if (pocketMoney >= 100) {
+    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are rich!";
+    }
+
 
 
 

@@ -56,7 +56,17 @@ function checkName() {
     document.getElementById("output").innerHTML = "Type a correct name";
     }
 }
+function checkPocketMoney() {
 
+  const pocketMoney = document.getElementById("pocketMoneyField").value;
+
+  if (pocketMoney >= 50) {
+    document.getElementById("output").innerHTML = "You have enough pocket money to buy something!";
+  }
+    else {
+    document.getElementById("output").innerHTML = "You might want to save up more pocket money.";
+    }
+}
 
 
 

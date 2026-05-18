@@ -61,7 +61,7 @@ function checkPocketMoney() {
   const pocketMoney = document.getElementById("pocketMoneyField").value;
 
   if (pocketMoney >= 1) {
-    document.getElementById("output").innerHTML = "You have ";
+    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!";
   }
     else {
     document.getElementById("output").innerHTML = "Type a number, ok?";

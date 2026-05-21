@@ -86,9 +86,6 @@ function displayProduct(productName, price) {
 }
 
 
-
-
-
 /*****************************
  Main code
 *****************************/

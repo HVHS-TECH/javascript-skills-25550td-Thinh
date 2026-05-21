@@ -1,5 +1,5 @@
 /* Paste your code from the last task */
-console.log("Running t12_conditionals.js")
+console.log("Running t12_data_types.js")
 
 // variable
 let username = "Thinh";
@@ -81,9 +81,9 @@ if (pocketMoney <= 19&& pocketMoney >= 2) {
         document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
     }
 }
-
-
-
+function displayProduct(productName, price) {
+    Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
+}
 
 
 

@@ -66,12 +66,12 @@ function checkPocketMoney() {
     }
 
     const chocolatePrice = 4;
-    const affordMsg = pocketMoney >= chocolatePrice
+    const afford = pocketMoney >= chocolatePrice
         ? "You can afford a Chocolate bar for $" + chocolatePrice.toFixed(2) + "."
         : "Sorry, You cannot afford a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
     let categoryMsg = "";
     console.log("checkPocketMoney: pocketMoney=", pocketMoney);
-    out.innerHTML = categoryMsg + " " + affordMsg;
+    out.innerHTML = categoryMsg + " " + afford;
 }
 
 

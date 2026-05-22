@@ -46,7 +46,6 @@ function Start() {
     Output.innerHTML += "<h2> My name is " + username + "</h2>";
 }
 function checkName() {
-
   if (username === "Thinh" || username === "thinh") {
     document.getElementById("output").innerHTML = "Welcome to the page, Thinh!!!";
   }

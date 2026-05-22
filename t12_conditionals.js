@@ -1,5 +1,5 @@
 /* Paste your code from the last task */
-console.log("Running t12_data_types.js")
+console.log("Running t12_conditionals.js")
 
 // variable
 let username = "Thinh";
@@ -42,7 +42,7 @@ function displayProduct(productName, price) {
 }
 function Start() {
     answer= years - userage;
-    spaceForJavaScriptOutput.innerHTML += "<h1> This is the button task</h1>";
+    Output.innerHTML += "<h1> This is the button task</h1>";
     Output.innerHTML += "<h2> My name is " + username + "</h2>";
 }
 function checkName() {
@@ -56,26 +56,27 @@ function checkName() {
 //Line 1//
 function checkPocketMoney() {
 
-  const pocketMoney = document.getElementById("pocketMoneyField").value;
+    const raw = document.getElementById("pocketMoneyField").value;
+    const pocketMoney = parseFloat(raw);
+    const out = document.getElementById("output");
 
-  if (pocketMoney >= 20) {
-    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!💸";
-  }
-if (pocketMoney <= 19&& pocketMoney >= 2) {
-    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!😕";
+    if (isNaN(pocketMoney)) {
+        out.innerHTML = "Please enter a valid number";
+        return;
     }
 
- if (pocketMoney >= 100) {
-    document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are rich!💵";
-    }
     if (pocketMoney >= 1000) {
-        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!💰💰💰";
-    }
-    if (pocketMoney <=1) {
-        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are broke!😕";
-    }
-    if (pocketMoney <= 0 && pocketMoney <= -1) {
-        document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!💰💰💰";
+    } else if (pocketMoney >= 100) {
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are rich!💵";
+    } else if (pocketMoney >= 20) {
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!💸";
+    } else if (pocketMoney >= 2) {
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!😕";
+    } else if (pocketMoney >= 0) {
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are broke!😕";
+    } else {
+        out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
     }
 }
 

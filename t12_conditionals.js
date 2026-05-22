@@ -67,15 +67,20 @@ function checkPocketMoney() {
 
     if (pocketMoney >= 1000) {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!💰💰💰";
-    } else if (pocketMoney >= 100) {
+    }
+     else if (pocketMoney >= 100) {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are rich!💵";
-    } else if (pocketMoney >= 20) {
+    }
+     else if (pocketMoney >= 20) {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, nice!💸";
-    } else if (pocketMoney >= 2) {
+    }
+     else if (pocketMoney >= 2) {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, try to save more money!😕";
-    } else if (pocketMoney >= 0) {
+    }
+     else if (pocketMoney >= 0) {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are broke!😕";
-    } else {
+    }
+     else {
         out.innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
     }
 }

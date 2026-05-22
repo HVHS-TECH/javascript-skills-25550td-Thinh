@@ -81,9 +81,10 @@ if (pocketMoney <= 19&& pocketMoney >= 2) {
         document.getElementById("output").innerHTML = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
     }
 }
-function displayProduct(productName, price) {
-    Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
-}
+
+
+
+
 
 
 /*****************************

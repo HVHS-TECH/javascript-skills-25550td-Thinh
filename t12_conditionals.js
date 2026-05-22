@@ -47,10 +47,10 @@ function Start() {
 }
 function checkName() {
   if (username === "Thinh" || username === "thinh") {
-    document.getElementById("output").innerHTML = "Welcome to the page";
+  Output.innerHTML = "Welcome to the page";
   }
     else {
-    document.getElementById("output").innerHTML = "Type a correct name";
+    Output.innerHTML = "Type a correct name";
     }
 }
 //Line 1//

@@ -39,6 +39,9 @@ function welcome() {
 function displayProduct(productName, price) {
     Output.innerHTML += "<p>" + productName + ": $" + price + "</p>";
 }
+function calculateChange(_money, _price) {
+    return _money - _price;
+}
 function Start() {
     answer= years - userage;
     Output.innerHTML += "<h1> This is the button task</h1>";
@@ -65,12 +68,12 @@ function checkPocketMoney() {
     }
 
     const chocolatePrice = 4;
-    const afford = pocketMoney >= chocolatePrice
-        ? "You can afford a Chocolate bar for $" + chocolatePrice.toFixed(2) + ". Your change is $" + (pocketMoney - chocolatePrice).toFixed(2)
-        : "Sorry, You cannot afford a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
-    let categoryMsg = "";
-    console.log("checkPocketMoney: pocketMoney=", pocketMoney);
-    out.innerHTML = categoryMsg + " " + afford;
+    if (pocketMoney >= chocolatePrice) {
+        const change = calculateChange(pocketMoney, chocolatePrice);
+        out.innerHTML = "You will get $" + change.toFixed(2) + " change";
+    } else {
+        out.innerHTML = "Sorry, you cannot afford a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
+    }
 }
 
 

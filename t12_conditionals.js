@@ -69,7 +69,6 @@ function checkPocketMoney() {
     const affordMsg = pocketMoney >= chocolatePrice
         ? "You can buy a Chocolate bar for $" + chocolatePrice.toFixed(2) + "."
         : "You cannot buy a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
-
     let categoryMsg;
     out.innerHTML = categoryMsg + " " + affordMsg;
 }

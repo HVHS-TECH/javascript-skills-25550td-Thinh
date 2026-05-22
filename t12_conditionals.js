@@ -71,20 +71,6 @@ function checkPocketMoney() {
         : "You cannot buy a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
 
     let categoryMsg;
-    if (pocketMoney >= 1000) {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, you are a millionaire!💰💰💰";
-    } else if (pocketMoney >= 100) {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, you are rich!💵";
-    } else if (pocketMoney >= 20) {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, nice!💸";
-    } else if (pocketMoney >= 2) {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, try to save more money!😕";
-    } else if (pocketMoney >= 0) {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, you are broke!😕";
-    } else {
-        categoryMsg = "You have " + pocketMoney + " dollars in your pocket, you are in debt!😭";
-    }
-
     out.innerHTML = categoryMsg + " " + affordMsg;
 }
 

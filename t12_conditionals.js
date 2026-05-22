@@ -47,9 +47,7 @@ function Start() {
 }
 function checkName() {
 
-  const name = document.getElementById("nameField").value;
-
-  if (name === "Thinh" || name === "thinh") {
+  if (username === "Thinh" || username === "thinh") {
     document.getElementById("output").innerHTML = "Welcome to the page, Thinh!!!";
   }
     else {

@@ -47,7 +47,7 @@ function Start() {
 }
 function checkName() {
   if (username === "Thinh" || username === "thinh") {
-    document.getElementById("output").innerHTML = "Welcome to the page, Thinh!!!";
+    document.getElementById("output").innerHTML = "Welcome to the page";
   }
     else {
     document.getElementById("output").innerHTML = "Type a correct name";

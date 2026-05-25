@@ -93,5 +93,8 @@ displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
 Start();
+// Example usage of calculateChange
+var change = calculateChange(11, 5);
+Output.innerHTML += "<p>You will get $" + change + " change</p>";
 
 

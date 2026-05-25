@@ -9,9 +9,6 @@ let next10years= 10;
 let answer;
 let half= 2;
 let extra= 3;
-let arr = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
-let choice = chooseField.value;
-Output.innerHTML = "You choose: " + arr[choice] + "<br>";
 
 //Main code
 console.log(username);
@@ -80,12 +77,10 @@ function checkPocketMoney() {
     }
 }
 function checkRating() {
-    let choice = chooseField.value;
-
-
-
-
-
+  let arr = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
+  let choice = chooseField.value;
+Output.innerHTML = "You choose: " + arr[choice] + "<br>";
+}
 
 
 

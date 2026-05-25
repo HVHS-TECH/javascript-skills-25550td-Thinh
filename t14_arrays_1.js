@@ -9,6 +9,7 @@ let next10years= 10;
 let answer;
 let half= 2;
 let extra= 3;
+let arr = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
 
 //Main code
 console.log(username);
@@ -76,6 +77,9 @@ function checkPocketMoney() {
         out.innerHTML = "Sorry, you cannot afford a Chocolate bar. You need $" + (chocolatePrice - pocketMoney).toFixed(2) + " more.";
     }
 }
+function checkRating() {
+
+
 
 
 

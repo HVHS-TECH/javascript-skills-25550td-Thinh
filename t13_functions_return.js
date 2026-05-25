@@ -9,6 +9,8 @@ let next10years= 10;
 let answer;
 let half= 2;
 let extra= 3;
+var change = calculateChange(11, 5);
+Output.innerHTML += "<p>You will get $" + change + " change</p>";
 //Main code
 console.log(username);
 console.log(userage);
@@ -93,8 +95,7 @@ displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
 Start();
-// Example usage of calculateChange
-var change = calculateChange(11, 5);
-Output.innerHTML += "<p>You will get $" + change + " change</p>";
+
+
 
 

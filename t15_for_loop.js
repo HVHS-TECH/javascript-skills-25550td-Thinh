@@ -19,6 +19,9 @@ function countDown() {
     if (verseInput.value > 0) {
         for (let i = verseInput.value; i > 0; i--) {
             output.innerHTML += "<p>" + i + " bottles of milk on the wall</p>";
+            output.innerHTML += "<p>" + i + " bottles of milk</p>";
+            output.innerHTML += "<p>If one of those bottles should happen to fall</p>";
+                output.innerHTML += "<p>There'll be " + (i - 1) + " bottles of milk on the wall</p>";
         }
     }
     else {

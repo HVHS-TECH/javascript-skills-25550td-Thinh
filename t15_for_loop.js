@@ -13,7 +13,6 @@ console.log("age")
 
 
 
-
 //Functions
 function countDown() {
     if (verseInput.value > 0) {

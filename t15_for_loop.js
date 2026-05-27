@@ -21,6 +21,7 @@ function countDown() {
             Output.innerHTML += "<p>" + i + " bottles of milk</p>";
             Output.innerHTML += "<p>If one of those bottles should happen to fall</p>";
                 Output.innerHTML += "<p>" + (i - 1) + " bottles of milk on the wall</p>";
+                
         }
     }
     else {

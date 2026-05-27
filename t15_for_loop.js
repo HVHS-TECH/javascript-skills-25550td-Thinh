@@ -25,6 +25,6 @@ function countDown() {
         }
     }
     else {
-        Output.innerHTML = "<p>Type a number bigger than 0</p>";
+        Output.innerHTML = "<p>Type a number bigger than 0 </p>";
     }
 }

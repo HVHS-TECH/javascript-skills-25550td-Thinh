@@ -48,6 +48,43 @@ function displayProduct(productName, price) {
 function calculateChange(_money, _price) {
     return _money - _price;
 }
+
+/*****************************
+ Shopping List - Arrays
+*****************************/
+let shoppingList = [];
+
+function addItem() {
+    const input = document.getElementById('itemInput');
+    const item = input.value.trim();
+    const listOutput = document.getElementById('listOutput');
+    
+    if (item === '') {
+        listOutput.innerHTML = '<p style="color: red;">Please enter an item name.</p>';
+        return;
+    }
+    
+    shoppingList.push(item);
+    listOutput.innerHTML = '<p style="color: green;">You have added ' + item + ' to the list</p>';
+    input.value = '';
+    input.focus();
+}
+
+function displayList() {
+    const listOutput = document.getElementById('listOutput');
+    
+    if (shoppingList.length === 0) {
+        listOutput.innerHTML = '<p>Your shopping list is empty.</p>';
+        return;
+    }
+    
+    let listHTML = '<p><strong>These are the items on your shopping list:</strong></p><pre>';
+    for (let i = 0; i < shoppingList.length; i++) {
+        listHTML += (i + 1) + '. ' + shoppingList[i] + '\n';
+    }
+    listHTML += '</pre>';
+    listOutput.innerHTML = listHTML;
+}
 function Start() {
     answer= years - userage;
     Output.innerHTML += "<h1> This is the button task</h1>";

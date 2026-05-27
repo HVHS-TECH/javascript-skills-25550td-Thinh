@@ -27,6 +27,14 @@
 
   </div>
 
+  <form id="shoppingListForm" style="margin-top: 1rem;">
+    <label for="itemInput">Add item to shopping list:</label>
+    <input type="text" id="itemInput" placeholder="Enter item name">
+    <input type="button" id="addBtn" value="Add Item" onclick="addItem()">
+    <input type="button" id="displayBtn" value="Show List" onclick="displayList()">
+  </form>
+
+  <div id="listOutput" style="margin-top: 1rem; background: #f7f7f7; padding: 10px; border-radius: 4px;"></div>
 
   <script src="../t16_arrays_continued.js"></script>
 

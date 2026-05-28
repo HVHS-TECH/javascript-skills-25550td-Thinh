@@ -86,7 +86,7 @@ Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
 function addItems() {
     const item = document.getElementById("shoppingItems").value;
     shoppingList.push(item);
-    Output.innerHTML += "<h3>You have added: " + item + "</h3>";
+    Output.innerHTML += "<h3>You have added " + item + " to the list</h3>";
 }
 function checkList() {
     Output.innerHTML += "<h2>These are the items on your shopping list:</h2>";

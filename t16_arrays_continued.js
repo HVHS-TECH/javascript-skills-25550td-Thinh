@@ -84,7 +84,8 @@ Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
 
 function addItems() {
   let item = shoppingItems.value;
-  Output.innerHTML += "<p>" + item + "</p>";
+  Output.innerHTML += "<h2>" + item + "</h2>";
+  Output.innerHTML += "<h3>You have added " + item + " to your shopping list</h3>";
 }
 
 

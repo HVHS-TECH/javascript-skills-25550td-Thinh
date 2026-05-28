@@ -56,7 +56,7 @@ function checkName() {
     Output.innerHTML = "Type a correct name";
     }
 }
-//Line 1//
+
 function checkPocketMoney() {
 
     const raw = document.getElementById("pocketMoneyField").value;
@@ -80,6 +80,11 @@ function checkRating() {
   let arr = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
   let choice = chooseField.value;
 Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
+}
+
+function addItems() {
+  let item = shoppingItems.value;
+  Output.innerHTML += "<p>" + item + "</p>";
 }
 
 

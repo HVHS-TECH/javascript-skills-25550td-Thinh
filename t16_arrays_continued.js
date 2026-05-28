@@ -86,6 +86,9 @@ function addItems() {
   let item = shoppingItems.value;
   Output.innerHTML += "<h2>" + item + "</h2>";
   Output.innerHTML += "<h3>You have added " + item + " to your shopping list</h3>";
+  for (let i = 0; i < shoppingItems.length; i++) {
+    Output.innerHTML += "<p>" + shoppingItems[i] + "</p>";
+  }
 }
 
 

@@ -79,19 +79,34 @@ function checkPocketMoney() {
 function checkRating() {
   let arr = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
   let choice = chooseField.value;
-Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
+  Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
 }
 
+const shoppingInput = document.getElementById("shoppingItems");
+const shoppingItems = [];
+
 function addItems() {
-  let item = shoppingItems.value;
+  let item = shoppingInput.value.trim();
+  if (!item) {
+    Output.innerHTML += "<p>Please type an item first.</p>";
+    return;
+  }
+
+  shoppingItems.push(item);
   Output.innerHTML += "<h2>" + item + "</h2>";
   Output.innerHTML += "<h3>You have added " + item + " to your shopping list</h3>";
+  shoppingInput.value = "";
 }
 
 function checkList() {
+  if (shoppingItems.length === 0) {
+    Output.innerHTML += "<p>Your shopping list is empty.</p>";
+    return;
+  }
+
   for (let i = 0; i < shoppingItems.length; i++) {
     Output.innerHTML += "<p>" + shoppingItems[i] + "</p>";
-  } 
+  }
 }
 
 

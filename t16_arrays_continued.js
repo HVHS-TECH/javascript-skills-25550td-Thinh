@@ -87,6 +87,7 @@ function addItems() {
     const item = document.getElementById("shoppingItems").value;
     shoppingList.push(item);
     Output.innerHTML = "<h2>Shopping List:</h2><ul>" + shoppingList.map(i => "<li>" + i + "</li>").join("") + "</ul>";
+    Output.innerHTML += "<p>You have added: " + item + "</p>";
 }
 
 /*****************************

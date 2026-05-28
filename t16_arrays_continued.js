@@ -90,8 +90,11 @@ function addItems() {
     Output.innerHTML += "<p>" + shoppingItems[i] + "</p>";
   }
 }
-
-
+function checkList() {
+  for (let i = 0; i < shoppingItems.length; i++) {
+    Output.innerHTML += "<p>" + shoppingItems[i] + "</p>";
+  } 
+}
 
 
 /*****************************

@@ -84,29 +84,9 @@ Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
 }
 
 function addItems() {
-  const shoppingField = document.getElementById("shoppingItems");
-  let item = shoppingField.value.trim();
-
-  if (!item) {
-    Output.innerHTML += "<p>Please type an item before adding it to the list.</p>";
-    return;
-  }
-
-  shoppingList.push(item);
-  Output.innerHTML += "<p>You have added " + item + " to the list</p>";
-  shoppingField.value = "";
-}
-
-function showShoppingList() {
-  if (shoppingList.length === 0) {
-    Output.innerHTML += "<p>Your shopping list is empty.</p>";
-    return;
-  }
-
-  Output.innerHTML += "<h2>These are the items on your shopping list:</h2>";
-  for (let i = 0; i < shoppingList.length; i++) {
-    Output.innerHTML += "<p>" + shoppingList[i] + "</p>";
-  }
+    const item = document.getElementById("shoppingItems").value;
+    shoppingList.push(item);
+    Output.innerHTML = "<h2>Shopping List:</h2><ul>" + shoppingList.map(i => "<li>" + i + "</li>").join("") + "</ul>";
 }
 
 /*****************************

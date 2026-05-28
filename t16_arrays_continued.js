@@ -23,6 +23,7 @@ console.log("I have "+ money + " dollars")
 console.log("I spend half of my money, now I have " + (money / half));
 console.log("Then I get 3 dollars, now I have " + (money / half + extra))
 const Output = document.getElementById("spaceForJavaScriptOutput");
+const shoppingList = [];
 Output.innerHTML += "<h2>Hi, my nane is " + username +"</h2>";
 Output.innerHTML += "<p>I am "+ userage + " years old</p>";
 Output.innerHTML += "<p>I was born in " +  (years-userage) + "</p>";
@@ -83,12 +84,30 @@ Output.innerHTML = "<h2>You choose: " + arr[choice] + "</h2>";
 }
 
 function addItems() {
-  let item = shoppingItems.value;
-  Output.innerHTML += "<h2>" + item + "</h2>";
-  Output.innerHTML += "<h3>You have added " + item + " to your shopping list</h3>";
-  
+  const shoppingField = document.getElementById("shoppingItems");
+  let item = shoppingField.value.trim();
+
+  if (!item) {
+    Output.innerHTML += "<p>Please type an item before adding it to the list.</p>";
+    return;
+  }
+
+  shoppingList.push(item);
+  Output.innerHTML += "<p>You have added " + item + " to the list</p>";
+  shoppingField.value = "";
 }
 
+function showShoppingList() {
+  if (shoppingList.length === 0) {
+    Output.innerHTML += "<p>Your shopping list is empty.</p>";
+    return;
+  }
+
+  Output.innerHTML += "<h2>These are the items on your shopping list:</h2>";
+  for (let i = 0; i < shoppingList.length; i++) {
+    Output.innerHTML += "<p>" + shoppingList[i] + "</p>";
+  }
+}
 
 /*****************************
  Main code

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemonade Stand Game</title>
+  <link rel="stylesheet" href="../css/lemonade.css">
+  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
+</head>
+
+<body>
+  <main class="game-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Freshly squeezed fun</p>
+        <h1>Lemonade Stand</h1>
+        <p class="lead">Manage your supplies, track your cash, and grow your stand one sunny day at a time.</p>
+      </div>
+      <a class="back-link" href="../index.html">← Back to skills</a>
+    </header>
+
+    <section class="dashboard-grid">
+      <article class="panel summary-card">
+        <h2>Dashboard</h2>
+        <ul class="stat-list">
+          <li><span class="stat-label">Day</span><strong class="stat-value" id="dayLabel">1</strong></li>
+          <li><span class="stat-label">Cash</span><strong class="stat-value" id="cashLabel">$20.00</strong></li>
+        </ul>
+        <p class="note">Starting cash: $20.00 · Day 1</p>
+      </article>
+
+      <article class="panel">
+        <h2>Inventory</h2>
+        <ul class="inventory-list">
+          <li><span class="inventory-label">Lemons</span><strong class="inventory-value" id="lemonsCount">0</strong></li>
+          <li><span class="inventory-label">Sugar</span><strong class="inventory-value" id="sugarCount">0</strong></li>
+          <li><span class="inventory-label">Ice</span><strong class="inventory-value" id="iceCount">0</strong></li>
+          <li><span class="inventory-label">Cups</span><strong class="inventory-value" id="cupsCount">0</strong></li>
+        </ul>
+      </article>
+
+      <article class="panel market-card">
+        <h2>Purchasing Market</h2>
+        <p>Buy supplies for your stand. Prices update automatically if cash is running low.</p>
+
+        <div class="market-grid">
+          <section class="item-card">
+            <h3>Lemons</h3>
+            <p>$0.20 each</p>
+            <div class="qty-row">
+              <label for="lemonsQty">Qty</label>
+              <input id="lemonsQty" type="number" min="1" max="20" value="1">
+            </div>
+            <button class="buy-btn" data-item="lemons" type="button">Buy Lemons</button>
+          </section>
+
+          <section class="item-card">
+            <h3>Sugar</h3>
+            <p>$0.10 each</p>
+            <div class="qty-row">
+              <label for="sugarQty">Qty</label>
+              <input id="sugarQty" type="number" min="1" max="20" value="1">
+            </div>
+            <button class="buy-btn" data-item="sugar" type="button">Buy Sugar</button>
+          </section>
+
+          <section class="item-card">
+            <h3>Ice</h3>
+            <p>$0.05 each</p>
+            <div class="qty-row">
+              <label for="iceQty">Qty</label>
+              <input id="iceQty" type="number" min="1" max="20" value="1">
+            </div>
+            <button class="buy-btn" data-item="ice" type="button">Buy Ice</button>
+          </section>
+
+          <section class="item-card">
+            <h3>Cups</h3>
+            <p>$0.05 each</p>
+            <div class="qty-row">
+              <label for="cupsQty">Qty</label>
+              <input id="cupsQty" type="number" min="1" max="20" value="1">
+            </div>
+            <button class="buy-btn" data-item="cups" type="button">Buy Cups</button>
+          </section>
+        </div>
+
+        <p id="marketMessage" class="market-message">Choose supplies and start your first day.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="../js/lemonade_stand.js"></script>
+</body>
+
+</html>
